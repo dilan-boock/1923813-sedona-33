@@ -8,36 +8,35 @@
   <body>
 
     <header>
-      <img src="" alt="Logotype">
+      <img class="logotype" src="images/logo.png" alt="Logotype">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Главная</a>
+            <a href="index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Гостиницы</a>
+            <a href="katalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+              <img class="icons-header" src="images/search.png" alt="Поиск">
             </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">
-                Избранное
-              </span>
+              <img class="icons-header" src="images/favorite.png" alt="Избранное">
+              <div class="icons-favor">
+                <p>12</p>
+              </div>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+            <a class="link-button navigation-link " href="#"><span class="inner">ХОЧУ СЮДА!</span></a>
           </li>
         </ul>
       </nav>
@@ -49,10 +48,10 @@
           <h2 class="filtr-h2">Гостиницы Седоны</h2>
           <ul class="filtr-head">
             <li class="filtr-head-item">
-              <a class="filtr-nav" href="#">Главная</a>
+              <a class="filtr-nav" href="index.html">Главная</a>
             </li>
             <li class="filtr-head-item">
-              <a class="filtr-nav" href="#">Гостиницы</a>
+              <a class="filtr-nav" href="katalog.html">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -61,15 +60,15 @@
           <ul class="filtr-list">
             <legend class="filtr-title">Инфраструктура</legend>
             <li class="filtr-item">
-              <input type="checkbox" id="pool" name="pool">
+              <input class="checkbox" type="checkbox" id="pool" name="pool">
               <label for="pool">Бассейн</label>
             </li>
             <li class="filtr-item">
-              <input type="checkbox" id="parking" name="parking">
+              <input class="checkbox" type="checkbox" id="parking" name="parking">
               <label for="pool">Парковка</label>
             </li>
             <li class="filtr-item">
-              <input type="checkbox" id="wifi" name="wifi">
+              <input class="checkbox" type="checkbox" id="wifi" name="wifi">
               <label for="pool">Wi-Fi</label>
             </li>
           </ul>
@@ -92,15 +91,15 @@
             <legend class="filtr-title">Стоимость, ₽:</legend>
             <li class="filtr-item">
               <label for="min">0</label>
-              <input type="text" id="min" name="min">
+              <input class="pole" type="text" id="min" name="min">
               <input type="range" min="0" max="9000" id="price_min" oninput="" value="0">
               <label for="max">9000</label>
-              <input type="text" id="max" name="max">
+              <input class="pole" type="text" id="max" name="max">
               <input type="range" min="0" max="9000" id="price_max" oninput="" value="9000">
             </li>
           </ul>
           <button class="filtr-button">ПРИМЕНИТЬ</button>
-          <input type="reset" value="Сбросить">
+          <input class="reset" type="reset" value="Сбросить">
       </form>
       </section>
 
@@ -204,33 +203,31 @@
           честное бойскаутское!
         </p>
         <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="mail-input">Ваш e-mail</label>
-          <input id="mail-input" class="mail-input" type="text" name="email">
+          <input id="mail-input" class="mail-input" type="text" name="email" placeholder="Ваш e-mail">
           <button class="mail-button">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
     </main>
-
     <footer>
       <ul class="icons-list">
         <li class="icons-item">
           <a class="icons-button" href="#">
-            <span class="visually-hidden">Твиттер</span>
+            <img class="icons-button" src="images/icons_twitter.png" alt="Твиттер">
           </a>
         </li>
         <li class="icons-item">
           <a class="icons-button" href="#">
-            <span class="visually-hidden">Фейсбук</span>
+            <img class="icons-button" src="images/icons_facebook.png" alt="Фейсбук">
           </a>
         </li>
         <li class="icons-item">
           <a class="icons-button" href="#">
-            <span class="visually-hidden">Youtube</span>
+            <img class="icons-button" src="images/icons_youtube.png" alt="Youtube">
           </a>
         </li>
       </ul>
       <span class="number">+7 (812) 812-12-12</span>
-      <span class="mylogo">.html<br>academy</span>
+      <img class="mylogo" src="images/logo-academy.png" alt=".html academy">
     </footer>
 
   </body>
